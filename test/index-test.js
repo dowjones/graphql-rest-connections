@@ -8,8 +8,12 @@ import {
 
 describe('dynamodb-rest-connections', () => {
   describe('isConnection', () => {
-    it('should detect a conn', () => {
+    it('should detect a non-conn', () => {
       should(isConnection()).not.be.ok();
+    });
+
+    it('should detect a conn', () => {
+      should(isConnection({pageInfo: {}, edges: []})).be.ok();
     });
   });
 
