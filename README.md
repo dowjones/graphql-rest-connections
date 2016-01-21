@@ -86,6 +86,10 @@ const userConnections = {
 };
 ```
 
+## Related
+
+[GraphQL DynamoDB Connections](https://github.com/dowjones/graphql-dynamodb-connections)
+
 
 ## License
 
